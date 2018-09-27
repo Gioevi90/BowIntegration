@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -160,7 +160,7 @@
 		21788DCF0C1112DEA270232C2A6076C3 /* FunctorFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FunctorFilter.swift; path = Sources/Bow/Typeclasses/FunctorFilter.swift; sourceTree = "<group>"; };
 		220D69ACA61B6D7C9C307CE9596E22A1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22169A216C5F8AAEC818413B26243187 /* WriterT.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WriterT.swift; path = Sources/Bow/Transformers/WriterT.swift; sourceTree = "<group>"; };
-		230740215E0C2EC23AC346B7331AE761 /* Pods_BowSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BowSampleTests.framework; path = "Pods-BowSampleTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		230740215E0C2EC23AC346B7331AE761 /* Pods_BowSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BowSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B78531F0D2B44DBDF597585EFF1BCFF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BD3BEC4574227B7470EC1387B75CBDF /* At.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = At.swift; path = Sources/Bow/Optics/Typeclasses/At.swift; sourceTree = "<group>"; };
 		2CC4CBD4C64656A5A5ED43B309E5C7BD /* StringInstances.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringInstances.swift; path = Sources/Bow/Instances/StringInstances.swift; sourceTree = "<group>"; };
@@ -208,7 +208,7 @@
 		6D95E4CCA3D777D2610C6C63EAEC9E91 /* Traversal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Traversal.swift; path = Sources/Bow/Optics/Traversal.swift; sourceTree = "<group>"; };
 		6E55564A983AF72139B0F29EF782E704 /* Coproduct.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coproduct.swift; path = Sources/Bow/Data/Coproduct.swift; sourceTree = "<group>"; };
 		6E6FE59DACF0DF76E13C49F36112562D /* AsyncContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncContext.swift; path = Sources/Bow/Effects/AsyncContext.swift; sourceTree = "<group>"; };
-		701F4975CA6EDFABEF702F06698EFAA6 /* Pods_BowSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BowSample.framework; path = "Pods-BowSample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		701F4975CA6EDFABEF702F06698EFAA6 /* Pods_BowSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BowSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71E04C3D180AA231FF4DC31E84E56978 /* Maybe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Maybe.swift; path = Sources/Bow/Data/Maybe.swift; sourceTree = "<group>"; };
 		745E8B0658FE6A98C85B95560C6F52EC /* Getter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Getter.swift; path = Sources/Bow/Optics/Getter.swift; sourceTree = "<group>"; };
 		7544ADC274A3993F5F5B102642174CA3 /* Validated+Optics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Validated+Optics.swift"; path = "Sources/Bow/Optics/STD/Validated+Optics.swift"; sourceTree = "<group>"; };
@@ -226,7 +226,7 @@
 		8DBB6525BE3C542DD4A87F14E9A4D21E /* Bimonad.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bimonad.swift; path = Sources/Bow/Typeclasses/Bimonad.swift; sourceTree = "<group>"; };
 		8E43860E8086591C02ACB415D06AFF16 /* Pods-BowSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BowSample.release.xcconfig"; sourceTree = "<group>"; };
 		919FB0D610E0F7F97FD908B3ACE23EAC /* Function0.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Function0.swift; path = Sources/Bow/Arrow/Function0.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9481635BAFB4F7AD02173FE06D02B722 /* Pods-BowSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BowSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9647515D5EEE42CB42F9710A11989E50 /* Ior.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Ior.swift; path = Sources/Bow/Data/Ior.swift; sourceTree = "<group>"; };
 		9A9569CACF1F5F30C01724195DE5BAB8 /* Bow.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Bow.xcconfig; sourceTree = "<group>"; };
@@ -241,7 +241,7 @@
 		AD8532ECCFC3D18A7D3D1687456C7487 /* Cokleisli.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cokleisli.swift; path = Sources/Bow/Arrow/Cokleisli.swift; sourceTree = "<group>"; };
 		AF92E52108705BFC5A2CB5A2061D1A6D /* BoundSetter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BoundSetter.swift; path = Sources/Bow/Optics/BoundSetter.swift; sourceTree = "<group>"; };
 		B0088D0C6FF6195AB8C60BB7E7A0A33E /* Monoid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Monoid.swift; path = Sources/Bow/Typeclasses/Monoid.swift; sourceTree = "<group>"; };
-		B0C7F45DFCD5241AF86A80FD88229B5D /* Bow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Bow.framework; path = Bow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0C7F45DFCD5241AF86A80FD88229B5D /* Bow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4944C048F9D4A34804FC03078BBAD1A /* Bifoldable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bifoldable.swift; path = Sources/Bow/Typeclasses/Bifoldable.swift; sourceTree = "<group>"; };
 		B6F5243E6B1A7B3F7690717550A7A860 /* Comonad.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Comonad.swift; path = Sources/Bow/Typeclasses/Comonad.swift; sourceTree = "<group>"; };
 		B753FDEC4218E36202E887C1CAA505D5 /* Pods-BowSampleTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BowSampleTests-resources.sh"; sourceTree = "<group>"; };
@@ -457,7 +457,6 @@
 				6CCA4AEDCEADAC0BA8404CB1F55429FC /* Yoneda.swift */,
 				CC7B55AE0A369624F695174348FFE1DE /* Support Files */,
 			);
-			name = Bow;
 			path = Bow;
 			sourceTree = "<group>";
 		};
@@ -612,7 +611,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 0940;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -821,11 +820,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-BowSampleTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-BowSampleTests/Pods-BowSampleTests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -858,11 +853,7 @@
 				INFOPLIST_FILE = "Target Support Files/Bow/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Bow/Bow.modulemap";
 				PRODUCT_MODULE_NAME = Bow;
 				PRODUCT_NAME = Bow;
@@ -996,6 +987,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
@@ -1018,11 +1010,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-BowSampleTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-BowSampleTests/Pods-BowSampleTests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -1057,11 +1045,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-BowSample/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-BowSample/Pods-BowSample.modulemap";
 				OTHER_LDFLAGS = "";
@@ -1071,8 +1055,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1097,19 +1080,14 @@
 				INFOPLIST_FILE = "Target Support Files/Bow/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Bow/Bow.modulemap";
 				PRODUCT_MODULE_NAME = Bow;
 				PRODUCT_NAME = Bow;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -1136,11 +1114,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-BowSample/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-BowSample/Pods-BowSample.modulemap";
 				OTHER_LDFLAGS = "";

@@ -1,6 +1,16 @@
 import Foundation
 import Bow
 
+extension Swift.Optional where Wrapped == String {
+    func optionEmail() -> Maybe<String> {
+        return self.flatMap({ $0.optionEmail() }) ?? Maybe.none()
+    }
+
+    func optionPhone() -> Maybe<String> {
+        return self.flatMap({ $0.optionPhone() }) ?? Maybe.none()
+    }
+}
+
 extension String {
     func optionEmail() -> Maybe<String> {
         guard self.isValidEmail() else {
@@ -15,17 +25,9 @@ extension String {
         }
         return Maybe.some(self)
     }
-
-    private func isValidEmail() -> Bool {
-        return true
-    }
-
-    private func isValidPhone() -> Bool {
-        return true
-    }
 }
 
-func validateData(email: String, phone: String) -> Maybe<Data> {
+func validateData(email: String?, phone: String?) -> Maybe<Data> {
     return Maybe<Data>.applicative()
         .map2(email.optionEmail(), phone.optionPhone()) { Data(email: $0, phone: $1) }
         .fix()

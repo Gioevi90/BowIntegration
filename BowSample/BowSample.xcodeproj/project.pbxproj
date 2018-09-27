@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0F9F121EFD71AE8D4AF9D324 /* Pods_BowSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F8AF7F245FCCFE4D87E2D3 /* Pods_BowSample.framework */; };
 		2B20041D70A3D984AEDE8921 /* Pods_BowSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D37B4022346DC6A62E5A404 /* Pods_BowSampleTests.framework */; };
+		AC3F94A5215D4468009BC6D2 /* MaybePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3F94A4215D4468009BC6D2 /* MaybePresenter.swift */; };
+		AC3F94A7215D4478009BC6D2 /* MaybeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3F94A6215D4478009BC6D2 /* MaybeProtocols.swift */; };
+		AC3F94A9215D48C7009BC6D2 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3F94A8215D48C7009BC6D2 /* Utils.swift */; };
 		AC7A7C9C2159853000326FF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7A7C9B2159853000326FF5 /* AppDelegate.swift */; };
 		AC7A7CA12159853000326FF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC7A7C9F2159853000326FF5 /* Main.storyboard */; };
 		AC7A7CA32159853200326FF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC7A7CA22159853200326FF5 /* Assets.xcassets */; };
@@ -32,6 +35,9 @@
 /* Begin PBXFileReference section */
 		0D37B4022346DC6A62E5A404 /* Pods_BowSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BowSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8395C0548C82BBB878DD0CBB /* Pods-BowSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BowSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-BowSample/Pods-BowSample.release.xcconfig"; sourceTree = "<group>"; };
+		AC3F94A4215D4468009BC6D2 /* MaybePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaybePresenter.swift; sourceTree = "<group>"; };
+		AC3F94A6215D4478009BC6D2 /* MaybeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaybeProtocols.swift; sourceTree = "<group>"; };
+		AC3F94A8215D48C7009BC6D2 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		AC7A7C982159853000326FF5 /* BowSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BowSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC7A7C9B2159853000326FF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC7A7CA02159853000326FF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -90,6 +96,31 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		AC3F94A1215D43E0009BC6D2 /* Maybe */ = {
+			isa = PBXGroup;
+			children = (
+				AC7A7CBB215985E100326FF5 /* MaybeViewController.swift */,
+				AC3F94A4215D4468009BC6D2 /* MaybePresenter.swift */,
+				AC3F94A6215D4478009BC6D2 /* MaybeProtocols.swift */,
+				AC7A7CBD2159862300326FF5 /* Functions.swift */,
+			);
+			path = Maybe;
+			sourceTree = "<group>";
+		};
+		AC3F94A2215D43ED009BC6D2 /* Validate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Validate;
+			sourceTree = "<group>";
+		};
+		AC3F94A3215D43FB009BC6D2 /* Either */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Either;
+			sourceTree = "<group>";
+		};
 		AC7A7C8F2159853000326FF5 = {
 			isa = PBXGroup;
 			children = (
@@ -113,9 +144,11 @@
 		AC7A7C9A2159853000326FF5 /* BowSample */ = {
 			isa = PBXGroup;
 			children = (
-				AC7A7CBD2159862300326FF5 /* Functions.swift */,
 				AC7A7C9B2159853000326FF5 /* AppDelegate.swift */,
-				AC7A7CBB215985E100326FF5 /* MaybeViewController.swift */,
+				AC3F94A8215D48C7009BC6D2 /* Utils.swift */,
+				AC3F94A3215D43FB009BC6D2 /* Either */,
+				AC3F94A2215D43ED009BC6D2 /* Validate */,
+				AC3F94A1215D43E0009BC6D2 /* Maybe */,
 				AC7A7C9F2159853000326FF5 /* Main.storyboard */,
 				AC7A7CA22159853200326FF5 /* Assets.xcassets */,
 				AC7A7CA42159853200326FF5 /* LaunchScreen.storyboard */,
@@ -239,15 +272,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-BowSampleTests-checkManifestLockResult.txt",
 			);
@@ -261,15 +290,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-BowSample/Pods-BowSample-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Bow/Bow.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bow.framework",
 			);
@@ -283,15 +308,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-BowSample-checkManifestLockResult.txt",
 			);
@@ -308,6 +329,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC7A7C9C2159853000326FF5 /* AppDelegate.swift in Sources */,
+				AC3F94A5215D4468009BC6D2 /* MaybePresenter.swift in Sources */,
+				AC3F94A7215D4478009BC6D2 /* MaybeProtocols.swift in Sources */,
+				AC3F94A9215D48C7009BC6D2 /* Utils.swift in Sources */,
 				AC7A7CBC215985E100326FF5 /* MaybeViewController.swift in Sources */,
 				AC7A7CBE2159862300326FF5 /* Functions.swift in Sources */,
 				AC7A7CC02159862E00326FF5 /* Data.swift in Sources */,

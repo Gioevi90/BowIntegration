@@ -37,9 +37,13 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ta9-EZ-ZoC">
                                 <rect key="frame" x="163" y="230" width="49" height="30"/>
                                 <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submitAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dyu-jQ-5mt"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="cSf-y5-vAd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5I1-dZ-ZfZ"/>
                             <constraint firstItem="Ta9-EZ-ZoC" firstAttribute="top" secondItem="cSf-y5-vAd" secondAttribute="bottom" constant="40" id="PDW-IP-E55"/>
@@ -48,9 +52,21 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cSf-y5-vAd" secondAttribute="trailing" constant="20" id="obY-Wd-Tyf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="m7v-Sd-0FM" appends="YES" id="Ook-8W-ccf"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="RWN-aC-AoA" id="Pdx-bW-tgn"/>
+                        <outlet property="phoneField" destination="8qy-X8-VFM" id="rHS-L8-LnN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="m7v-Sd-0FM">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="BYZ-38-t0r" id="tuU-td-1zU"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
         </scene>
     </scenes>
