@@ -1,7 +1,7 @@
 import Foundation
 
 struct MaybePresenter: MaybePresenterProtocol {
-    let view: MaybeViewProtocol
+    private weak var view: MaybeViewProtocol?
 
     init(view: MaybeViewProtocol) {
         self.view = view
@@ -9,6 +9,6 @@ struct MaybePresenter: MaybePresenterProtocol {
 
     func validate(_ email: String?, phone: String?) {
         let data = validateData(email: email, phone: phone)
-        data.fold(view.gotAnError, view.show)
+        view.map({ data.fold($0.gotAnError, $0.show) })
     }
 }
