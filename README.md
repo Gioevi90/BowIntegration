@@ -22,12 +22,17 @@ Option Data Type provides two possible values:
 
 ## Validation with Either
 
+![](Either.gif)
+
 Either Data Type provides two possible values:
 
 * **left(_:)**: generally, the case in which our field is not valid, encapsulating the information relative to the error that occurred. 
 * **right(_:)**: the case in which out field is valid, encapsulating the valid value.
 
 ## Validation with Validated
+
+
+![](Validated.gif)
 
 Validation Data Type provides two possible values:
 
