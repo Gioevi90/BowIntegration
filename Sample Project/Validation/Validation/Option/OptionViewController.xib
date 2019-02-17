@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OptionViewController" customModule="Validation" customModuleProvider="target">
+            <connections>
+                <outlet property="emailTextField" destination="xJZ-oe-3Cd" id="dS4-Hs-pz3"/>
+                <outlet property="phoneTextField" destination="r8d-hQ-LFq" id="9cL-tj-o5b"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xJZ-oe-3Cd">
+                    <rect key="frame" x="16" y="179" width="343" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="phone number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r8d-hQ-LFq">
+                    <rect key="frame" x="16" y="275" width="343" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flQ-Bh-YzS">
+                    <rect key="frame" x="159" y="405" width="57" height="30"/>
+                    <state key="normal" title="Proceed"/>
+                    <connections>
+                        <action selector="proceed:" destination="-1" eventType="touchUpInside" id="xNz-P1-aIX"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="r8d-hQ-LFq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="4FU-Ns-hAO"/>
+                <constraint firstItem="xJZ-oe-3Cd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="CCh-a3-F5S"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xJZ-oe-3Cd" secondAttribute="trailing" constant="16" id="Def-2J-aEH"/>
+                <constraint firstItem="r8d-hQ-LFq" firstAttribute="top" secondItem="xJZ-oe-3Cd" secondAttribute="bottom" constant="66" id="Oti-iL-SAt"/>
+                <constraint firstItem="xJZ-oe-3Cd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="159" id="f06-MK-L8s"/>
+                <constraint firstItem="flQ-Bh-YzS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="q3p-Ft-3xD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="r8d-hQ-LFq" secondAttribute="trailing" constant="16" id="qsb-0h-ie2"/>
+                <constraint firstItem="flQ-Bh-YzS" firstAttribute="top" secondItem="r8d-hQ-LFq" secondAttribute="bottom" constant="100" id="sJs-34-FJt"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="138.40000000000001" y="152.47376311844079"/>
+        </view>
+    </objects>
+</document>
