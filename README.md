@@ -7,6 +7,16 @@ To reach my goal I used Bow (https://github.com/bow-swift/bow), a framework that
 
 Thanks to [Daniele Campogiani](https://github.com/dcampogiani) for the support and the inspiration that gave me. This repository is based to Daniele Campogiani's Android Functional Validation repo (https://github.com/dcampogiani/AndroidFunctionalValidation).
 
+# Installation
+
+In order to run the sample project, run the following commands in the root directory:
+
+```
+$ swift build
+$ swift package generate-xcodeproj
+```
+Then open in XCode the **Validation workspace** and run the project.
+
 # Functional Data Types
 
 The examples in code show how to perform validation with **Option**, **Either** and **Validated** data types.
