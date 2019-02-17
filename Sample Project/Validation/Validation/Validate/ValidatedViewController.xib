@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ValidatedViewController" customModule="Validation" customModuleProvider="target">
+            <connections>
+                <outlet property="emailInvalidLabel" destination="daS-xm-8M6" id="nWh-e9-7h1"/>
+                <outlet property="emailTextField" destination="Buq-VV-qTU" id="QlF-80-9bR"/>
+                <outlet property="phoneInvalidLabel" destination="ZaA-wQ-lGN" id="OR7-DU-fXd"/>
+                <outlet property="phoneTextField" destination="Qpc-eL-Tny" id="QnW-26-Kud"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Buq-VV-qTU">
+                    <rect key="frame" x="16" y="179" width="343" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="phone number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qpc-eL-Tny">
+                    <rect key="frame" x="16" y="275" width="343" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOL-gK-sHH">
+                    <rect key="frame" x="159" y="405" width="57" height="30"/>
+                    <state key="normal" title="Proceed"/>
+                    <connections>
+                        <action selector="proceed:" destination="-1" eventType="touchUpInside" id="OQ6-KJ-XIp"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invalid email: please check it" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daS-xm-8M6">
+                    <rect key="frame" x="214.5" y="213" width="144.5" height="12"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invalid phone number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZaA-wQ-lGN">
+                    <rect key="frame" x="250.5" y="309" width="108.5" height="12"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Buq-VV-qTU" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="159" id="3nz-4x-NRk"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="daS-xm-8M6" secondAttribute="trailing" constant="16" id="D5b-VG-c4P"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Buq-VV-qTU" secondAttribute="trailing" constant="16" id="FLv-H1-r3g"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ZaA-wQ-lGN" secondAttribute="trailing" constant="16" id="JOy-ER-V1X"/>
+                <constraint firstItem="ZaA-wQ-lGN" firstAttribute="top" secondItem="Qpc-eL-Tny" secondAttribute="bottom" constant="4" id="MfP-5c-5da"/>
+                <constraint firstItem="Buq-VV-qTU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="Mfg-8x-h2A"/>
+                <constraint firstItem="hOL-gK-sHH" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Uzo-Rd-D1h"/>
+                <constraint firstItem="hOL-gK-sHH" firstAttribute="top" secondItem="Qpc-eL-Tny" secondAttribute="bottom" constant="100" id="eeP-pE-xYM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Qpc-eL-Tny" secondAttribute="trailing" constant="16" id="ees-i9-4Hr"/>
+                <constraint firstItem="Qpc-eL-Tny" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="qkG-wT-C2P"/>
+                <constraint firstItem="daS-xm-8M6" firstAttribute="top" secondItem="Buq-VV-qTU" secondAttribute="bottom" constant="4" id="toK-cN-J1L"/>
+                <constraint firstItem="Qpc-eL-Tny" firstAttribute="top" secondItem="Buq-VV-qTU" secondAttribute="bottom" constant="66" id="ycR-6S-3HT"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>
