@@ -1,0 +1,70 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Bow",
+        "repositoryURL": "https://github.com/bow-swift/bow.git",
+        "state": {
+          "branch": null,
+          "revision": "be51ef766d0f137a1d68351031c99db0579cfe0a",
+          "version": "0.3.0"
+        }
+      },
+      {
+        "package": "BrightFutures",
+        "repositoryURL": "https://github.com/Thomvis/BrightFutures.git",
+        "state": {
+          "branch": null,
+          "revision": "b86a1d202afff7bfca7adf2423ad1962172ee10a",
+          "version": "7.0.0"
+        }
+      },
+      {
+        "package": "FileCheck",
+        "repositoryURL": "https://github.com/llvm-swift/FileCheck.git",
+        "state": {
+          "branch": null,
+          "revision": "89b8480055f9adf8ce2f9ad5e2fac7ac1076242e",
+          "version": "0.0.8"
+        }
+      },
+      {
+        "package": "Nimble",
+        "repositoryURL": "https://github.com/Quick/Nimble.git",
+        "state": {
+          "branch": null,
+          "revision": "e9d769113660769a4d9dd3afb855562c0b7ae7b0",
+          "version": "7.3.4"
+        }
+      },
+      {
+        "package": "Result",
+        "repositoryURL": "https://github.com/antitypical/Result.git",
+        "state": {
+          "branch": null,
+          "revision": "2ca499ba456795616fbc471561ff1d963e6ae160",
+          "version": "4.1.0"
+        }
+      },
+      {
+        "package": "RxSwift",
+        "repositoryURL": "https://github.com/ReactiveX/RxSwift.git",
+        "state": {
+          "branch": null,
+          "revision": "a2348cef2a28fca5a1a5fa26b3ce62e6831c0a49",
+          "version": "4.4.1"
+        }
+      },
+      {
+        "package": "SwiftCheck",
+        "repositoryURL": "https://github.com/typelift/SwiftCheck.git",
+        "state": {
+          "branch": null,
+          "revision": "cf9958085b2ee1643e541e407c3233d1b76c18ff",
+          "version": "0.11.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
