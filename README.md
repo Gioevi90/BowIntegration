@@ -13,6 +13,8 @@ The examples in code show how to perform validation with **Option**, **Either** 
 
 ## Validation with Option
 
+![](Option.gif)
+
 Option Data Type provides two possible values:
 
 * **none**: the case in which our field is not valid
