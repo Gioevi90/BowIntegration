@@ -44,7 +44,7 @@ Either Data Type provides two possible values:
 
 ![](Validated.gif)
 
-Validation Data Type provides two possible values:
+Validated Data Type provides two possible values:
 
 * **invalid(_:)**: the case in which our field is not valid, encapsulating the information relative to the error that occurred. 
 * **valid(_:)**: the case in which out field is valid, encapsulating the valid value.
