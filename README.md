@@ -1,5 +1,7 @@
 # Functional Validation With Bow
 
+# Important: This repository has been deprecated. Please move to -> https://github.com/Gioevi90/SampleValidation.git
+
 This repository consists in the implementation of some examples that show how to use functional data types to perform validation of two fields in Swift.
 The fields we want to validate are an **email** field and a **phone number** field.
 
